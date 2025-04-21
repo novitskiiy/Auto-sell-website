@@ -1,475 +1,474 @@
 /* Общие стили */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
 /* Контейнер dropdown */
 .dropdown {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 /* Кнопка меню */
 .dropdown > a {
-  font-family: 'Segoe UI', sans-serif;
-  text-decoration: none;
-  color: #fff;
-  padding: 12px 18px;
-  font-size: 16px;
-  font-weight: 600;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: color 0.3s;
+font-family: 'Segoe UI', sans-serif;
+text-decoration: none;
+color: #fff;
+padding: 12px 18px;
+font-size: 16px;
+font-weight: 600;
+background-color: transparent;
+border: none;
+cursor: pointer;
+transition: color 0.3s;
 }
 
 .dropdown > a:hover {
-  color: #ffd700; /* золотистый при наведении */
+color: #ffd700; /* золотистый при наведении */
 }
 
 /* Выпадающий список */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #000;
-  border: 1px solid #222;
-  min-width: 230px;
-  z-index: 1000;
-  border-radius: 0 0 6px 6px;
-  padding: 0; /* Убираем внутренние отступы контейнера */
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background: #000;
+border: 1px solid #222;
+min-width: 230px;
+z-index: 1000;
+border-radius: 0 0 6px 6px;
+padding: 0; /* Убираем внутренние отступы контейнера */
 }
 
 /* Пункты списка */
 .dropdown-content a {
-  display: block;
-  padding: 10px 12px; /* Равномерный отступ */
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
-  transition: background 0.2s, color 0.2s;
-  box-sizing: border-box; /* чтобы padding не влиял на ширину */
-  text-align: left;
+display: block;
+padding: 10px 12px; /* Равномерный отступ */
+color: #fff;
+font-size: 15px;
+text-decoration: none;
+border-bottom: 1px solid #222;
+transition: background 0.2s, color 0.2s;
+box-sizing: border-box; /* чтобы padding не влиял на ширину */
+text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #222;
-  color: #ffd700; /* жёлтый */
+background-color: #222;
+color: #ffd700; /* жёлтый */
 }
 
 
 /* Отображение меню */
 .dropdown:hover .dropdown-content {
-  display: block;
+display: block;
 }
-  /* картинка главная */
-  .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url('auto_main1.jpg'); /* Замени на путь к своей картинке */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* затемнение */
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    color: #fff;
-    line-height: 1.4;
-  }
-  
-  .form-section {
-    padding: 60px 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-  }
-  
-  .steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-  }
-  
-  .step {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    padding: 20px;
-    max-width: 260px;
-    flex: 1 1 200px;
-    transition: transform 0.3s ease;
-  }
-  
-  .step:hover {
-    transform: translateY(-5px);
-  }
-  
-  .step-icon {
-    font-size: 36px;
-    display: block;
-    margin-bottom: 15px;
-    color: #ffc107;
-  }
-  
-  .step h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #222;
-  }
-  
-  .step p {
-    font-size: 15px;
-    color: #555;
-  }
-  
-  /* Навигация */
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.75);
-    padding: 15px 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-size: 22px;
-    color: #f9c300;
-    font-weight: bold;
-  }
-  
-  .nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .nav a:hover {
-    color: #f9c300;
-  }
-  
- /* Фиксированный хедер */
-.header {
-    position: relative;
-    color: white;
-    padding-top: 100px; /* компенсируем фиксированные блоки */
-  }
-  
-  .top-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-size: 22px;
-    color: #f9c300;
-    font-weight: bold;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    color: white;
-    font-size: 14px;
-  }
-  
-  .contact-info a {
-    color: #f9c300;
-    text-decoration: none;
-  }
-  
-  /* Центр навигации */
-  .nav {
-    position: fixed;
-    top: 58px;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 12px 0;
-    z-index: 999;
-  }
-  
-  .nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .nav a:hover {
-    color: #f9c300;
-  }
-  
-  
-  /* Форма */
-  .form-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  input, button {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    background-color: #f9c300;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background-color: #ffdd00;
-  }
-  
-  /* Преимущества и услуги */
-  .advantages .adv-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .adv-item {
-    background: #f3f3f3;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1 1 200px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  /* Про нас */
-  .how-it-works p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .how-it-works ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .how-it-works li::before {
-    content: "🚗 ";
-    margin-right: 8px;
-  }
-  
-  
-  /* Контакты */
-  .contacts a {
-    color: #f9c300;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Отзывы */
-  .reviews {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-    min-height: 600px; /* Добавляем минимальную высоту с запасом */
-  }
-  
-  .review-slider {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden; /* Скрываем все слайды, кроме одного */
-  }
-  
-  .reviews-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px; /* Фиксированная высота для контейнера с отзывами */
-  }
-  
-  .reviews-wrapper {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .review {
-    display: none; /* Скрываем все слайды по умолчанию */
-    flex-shrink: 0; /* Убираем сжимание */
-    width: 100%;
-    max-width: 800px;
-    padding: 30px;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    min-height: 250px; /* Добавляем минимальную высоту для отзыва */
-    overflow: hidden; /* Чтобы не вылезал контент */
-  }
-  
-  .review img {
-    width: 360px;
-    height: 360px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 6px solid #f9c300;
-  }
-  
-  .review-text {
-    max-width: 550px;
-    font-size: 18px;
-    color: #333;
-    line-height: 1.5;
-    overflow-y: auto; /* Добавляем возможность прокрутки внутри текста */
-  }
-  
-  .review-text strong {
-    display: block;
-    margin-top: 15px;
-    color: #000;
-    font-size: 16px;
-  }
-  
-  /* Стрелки слайдера */
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-    /* Услуги */
-  .services {
-    padding: 60px 20px;
-    background-color: #f8f8f8;
-  }
-  
-  .services h2,
-  .services h3,
-  .services h5 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: 700;
-  }
-  
-  
-  .services-row {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 5px;
-    padding-bottom: 16px;
-    margin-bottom: 32px;
-  }
-  .services-row.center {
-    justify-content: center;
-    
-  }
-  .service-item {
-    flex: 0 0 auto;
-    width: 350px;
-    height: 300px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .service-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .service-item img {
-    width: 100%;
-    height: 300px; /* увеличили высоту */
-    object-fit: cover;
-    display: block;
-    border-radius: 12px;
-  }
+/* картинка главная */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('auto_main1.jpg'); /* Замени на путь к своей картинке */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* затемнение */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.form-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.step {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 260px;
+  flex: 1 1 200px;
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 15px;
+  color: #ffc107;
+}
+
+.step h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.step p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Навигация */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  color: #f9c300;
+  font-weight: bold;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #f9c300;
+}
+
+/* Фиксированный хедер */
+.header {
+  position: relative;
+  color: white;
+  padding-top: 100px; /* компенсируем фиксированные блоки */
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  color: #f9c300;
+  font-weight: bold;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  font-size: 14px;
+}
+
+.contact-info a {
+  color: #f9c300;
+  text-decoration: none;
+}
+
+/* Центр навигации */
+.nav {
+  position: fixed;
+  top: 58px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 12px 0;
+  z-index: 999;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #f9c300;
+}
+
+
+/* Форма */
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #f9c300;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ffdd00;
+}
+
+/* Преимущества и услуги */
+.advantages .adv-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.adv-item {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Про нас */
+.how-it-works p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.how-it-works ul {
+  list-style: none;
+  padding: 0;
+}
+
+.how-it-works li::before {
+  content: "🚗 ";
+  margin-right: 8px;
+}
+
+
+/* Контакты */
+.contacts a {
+  color: #f9c300;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Отзывы */
+.reviews {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 600px; /* Добавляем минимальную высоту с запасом */
+}
+
+.review-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Скрываем все слайды, кроме одного */
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Фиксированная высота для контейнера с отзывами */
+}
+
+.reviews-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.review {
+  display: none; /* Скрываем все слайды по умолчанию */
+  flex-shrink: 0; /* Убираем сжимание */
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  min-height: 250px; /* Добавляем минимальную высоту для отзыва */
+  overflow: hidden; /* Чтобы не вылезал контент */
+}
+
+.review img {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #f9c300;
+}
+
+.review-text {
+  max-width: 550px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  overflow-y: auto; /* Добавляем возможность прокрутки внутри текста */
+}
+
+.review-text strong {
+  display: block;
+  margin-top: 15px;
+  color: #000;
+  font-size: 16px;
+}
+
+/* Стрелки слайдера */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+  /* Услуги */
+.services {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.services h2,
+.services h3,
+.services h5 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+
+.services-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 5px;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+.services-row.center {
+  justify-content: center;
   
-  .service-item p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.4;
-  }
-  
-  
-  /* Футер */
-  .footer {
-    background: #222;
-    color: #aaa;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-  }
-  
+}
+.service-item {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item img {
+  width: 100%;
+  height: 300px; /* увеличили высоту */
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+
+.service-item p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+
+/* Футер */
+.footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
