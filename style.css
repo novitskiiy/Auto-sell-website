@@ -192,6 +192,24 @@ display: block;
   padding-top: 100px; /* компенсируем фиксированные блоки */
 }
 
+.header .social-icons {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.header .social-icons a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.header .social-icons a:hover img {
+  transform: scale(1.2);
+}
+
 .top-bar {
   position: fixed;
   top: 0;
@@ -313,10 +331,44 @@ button:hover {
 
 /* Контакты */
 .contacts a {
-  color: #f9c300;
+  color: #dbab01;
   text-decoration: none;
   font-weight: bold;
 }
+
+.contacts {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.contacts h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacts p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.contacts .social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contacts .social-icons a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.contacts .social-icons a:hover img {
+  transform: scale(1.2);
+}
+
 
 /* Отзывы */
 .reviews {
@@ -579,4 +631,21 @@ button:hover {
   height: auto;
   margin-right: 1rem; /* Отступ между флагом и текстом */
   vertical-align: middle; /* Выравнивание по вертикали */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
 }
