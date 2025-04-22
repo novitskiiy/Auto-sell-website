@@ -9,34 +9,41 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="top-bar">
-    <div class="logo">Викуп авто</div>
-    <div class="contact-info">
-      <span>Запоріжжя</span>
-      <span><a href="tel:+380680607777">+38 (068) 060-77-77</a></span>
-    </div>
-  </div>
-
-  <nav class="nav">
-    <a href="#">Головна</a>
-    <div class="dropdown">
-      <a href="#services">Послуги ▾</a>
-      <div class="dropdown-content">
-        <a href="#fast-buyout">Терміновий викуп авто</a>
-        <a href="#dtp-buyout">Викуп авто після ДТП</a>
-        <a href="#credit-buyout">Викуп кредитних авто</a>
-        <a href="#no-docs">Викуп авто без документів</a>
-        <a href="#free-eval">Безкоштовна оцінка авто</a>
-        <a href="#legal-help">Юридичний супровід угоди</a>
-        <a href="#trade-in">Обмін авто або Trade-in</a>
+  <header class="header">
+    <div class="top-bar">
+      <div class="logo">Викуп авто</div>
+      <div class="contact-info">
+        <span>Запоріжжя</span>
+        <span><a href="tel:+380680607777">+38 (068) 060-77-77</a></span>
+      </div>
+      <!-- Бургер кнопка -->
+      <div class="nav-button" onclick="toggleMenu(this)">
+        <div class="bar"></div>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
       </div>
     </div>
-    <a href="#about">Про нас</a>
-    <a href="#reviews">Відгуки</a>
-    <a href="#contacts">Контакти</a>
-  </nav>
-</header>
+  
+    <nav class="nav">
+      <a href="#">Головна</a>
+      <div class="dropdown">
+        <a>Послуги ▾</a>
+        <div class="dropdown-content">
+          <a href="#fast-buyout">Терміновий викуп авто</a>
+          <a href="#dtp-buyout">Викуп авто після ДТП</a>
+          <a href="#credit-buyout">Викуп кредитних авто</a>
+          <a href="#no-docs">Викуп авто без документів</a>
+          <a href="#free-eval">Безкоштовна оцінка авто</a>
+          <a href="#legal-help">Юридичний супровід угоди</a>
+          <a href="#trade-in">Обмін авто або Trade-in</a>
+        </div>
+      </div>
+      <a href="#about">Про нас</a>
+      <a href="#reviews">Відгуки</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+  
 
 <section class="hero">
   <div class="hero-overlay">
@@ -227,5 +234,6 @@
 </footer>
 
 <script src="slider.js"></script>
+<script src="burger.js"></script>
 </body>
 </html>
