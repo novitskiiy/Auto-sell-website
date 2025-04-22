@@ -532,11 +532,12 @@ button:hover {
     font-size: 1.6rem;
   }
 
-  .dropdown-content {
+  .dropdown .arrow {
     display: none;
-    flex-direction: column;
-    background: #000;
-    padding: 1rem;
+  }
+
+  .dropdown-content {
+    display: none !important;
   }
 
   .dropdown-content.open {
@@ -564,4 +565,18 @@ button:hover {
   .contact-info {
     display: none;
   }
+}
+
+/* Стили для якорей */
+:target {
+  padding-top: 10rem; /* Подберите значение, соответствующее высоте вашего хедера */
+  margin-top: -10rem; /* Компенсируем часть отступа */
+}
+
+/* Стили для флага Украины */
+.ukraine-flag {
+  width: 3rem; /* Регулируйте размер флага */
+  height: auto;
+  margin-right: 1rem; /* Отступ между флагом и текстом */
+  vertical-align: middle; /* Выравнивание по вертикали */
 }
